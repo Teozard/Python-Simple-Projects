@@ -24,6 +24,6 @@ for i in list_1:
         ov_list.append(i)
 
 print(ov_list)
-print([aa for aa in list_1 if aa in list_2])
+print(set([aa for aa in list_1 if aa in list_2]))
 
 
