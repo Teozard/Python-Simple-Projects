@@ -25,5 +25,3 @@ for i in list_1:
 
 print(ov_list)
 print(set([aa for aa in list_1 if aa in list_2]))
-
-

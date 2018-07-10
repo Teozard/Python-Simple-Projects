@@ -6,4 +6,3 @@ if str == rvd:
     print("palindrome")
 else:
     print('just a string')
-
