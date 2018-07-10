@@ -4,4 +4,4 @@ def end_list(a):
 
 list = [i for i in range(1, 11)]
 
-print(endlist(list))
+print(end_list(list))
