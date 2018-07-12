@@ -1,17 +1,12 @@
 from bs4 import BeautifulSoup
 import requests
 
+
+def get_article_heads(link):
+    soup = BeautifulSoup(requests.get(link).text, "html.parser")
+    article_heads = [elem.text for elem in soup.find_all('h2', 'story-heading')]
+    return article_heads
+
+
 url = 'http://www.nytimes.com/'
-r = requests.get(url)
-r_html = r.text
-
-soup = BeautifulSoup(r_html, "html.parser")
-h2 = soup.find_all('h2', 'story-heading')
-
-article_heads = []
-
-for elem in len(h2):
-    title = soup.find('h2', 'story-heading').string[elem]
-    article_heads.append(title)
-'
-print(len(h2))
+print(get_article_heads(url))
