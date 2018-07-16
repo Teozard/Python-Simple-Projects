@@ -21,4 +21,4 @@ def check_num(num):
     print(num, " is ", descriptor, "prime.", sep="", end="\n\n")
 
 
-check_num(get_number("Enter a number to check. Ctl-C to exit."))
+check_num(get_number("Enter a number to check. Ctl-C to exit. "))
