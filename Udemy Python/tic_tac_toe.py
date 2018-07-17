@@ -6,6 +6,7 @@ def display_board(board):
 
 
 def player_input():
+	player1 = ''
 	while player1 != 'X' or player1 != 'X':
 		player1 = input("Please pick a marker 'X' or 'O'")
 	print(player1)
